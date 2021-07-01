@@ -180,36 +180,56 @@ class DetailPage extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Container(
-                                  width: 70,
-                                  height: 80,
-                                  margin: EdgeInsets.only(right: 16),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(
-                                      defaultRadius,
+                                Stack(
+                                  children: [
+                                    Container(
+                                      width: 70,
+                                      height: 80,
+                                      margin: EdgeInsets.only(right: 16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(
+                                          defaultRadius,
+                                        ),
+                                        color: kLightBlueColor,
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            '31',
+                                            style: whiteTextStyle.copyWith(
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 2,
+                                          ),
+                                          Text(
+                                            'Aug',
+                                            style: whiteTextStyle.copyWith(
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                    color: kLightBlueColor,
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        '31',
-                                        style: whiteTextStyle.copyWith(
-                                          fontSize: 18,
+                                    Positioned(
+                                      right: 10,
+                                      top: -2,
+                                      child: Container(
+                                        width: 22,
+                                        height: 22,
+                                        decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              'assets/icon_check.png',
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                      SizedBox(
-                                        height: 2,
-                                      ),
-                                      Text(
-                                        'Aug',
-                                        style: whiteTextStyle.copyWith(
-                                          fontSize: 16,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                                 Container(
                                   width: 70,
@@ -332,6 +352,9 @@ class DetailPage extends StatelessWidget {
                                 ),
                               ],
                             ),
+                          ),
+                          SizedBox(
+                            height: 20,
                           ),
                         ],
                       ),
